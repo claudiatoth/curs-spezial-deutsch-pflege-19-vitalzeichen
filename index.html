@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitalzeichen — Blutdruck, Puls, Temperatur, Atmung · A2.1 · Pflege Lecția 19 · Annettes Deutschkurs</title>
+    <meta property="og:title" content="Pflege Lecția 19 · Vitalzeichen · Claudia Toth">
+    <meta property="og:description" content="A2.1 Pflege Lecția 19 — semnele vitale: Blutdruck + Puls + Temperatur + Atmung + Normalwerte + Comparativ (höher als) + când dai alarma.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ro_RO">
+    <meta name="description" content="Pflege Lecția 19 — Vitalzeichen. Tensiune + puls + temperatură + respirație + raportarea valorilor + Comparativ. Claudia Toth.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* ===== Dialog — layout self-contained (bule mereu vizibile) ===== */
+        .dialog-container { margin-top: 6px; }
+        .dialog-audio-player {
+            display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+            background: #f0fdf4; border: 1px solid #a7f3d0; border-radius: 12px;
+            padding: 10px 16px; margin-bottom: 18px;
+        }
+        .dialog-play-btn { width: 44px; height: 44px; border-radius: 50%; font-size: 18px; flex-shrink: 0; }
+        .dialog-time { font-weight: 700; color: #065f46; font-size: 0.9rem; }
+        .dialog-hint { color: #6b7280; font-size: 0.85rem; font-style: italic; }
+        .dialog-replici { display: flex; flex-direction: column; gap: 14px; }
+        .dialog-reply {
+            display: flex; align-items: flex-start; gap: 14px;
+            padding: 8px 10px; border-radius: 14px; border: 1px solid transparent;
+            transition: background 0.3s, border-color 0.3s;
+        }
+        .dialog-reply.active-reply { background: #ecfdf5; border-color: #6ee7b7; }
+        .dialog-reply .character-avatar {
+            width: 56px; height: 56px; min-width: 56px; border-width: 2px;
+            font-size: 32px; margin-top: 2px; background: white;
+        }
+        .dialog-reply .speech-bubble {
+            opacity: 1; transform: none; pointer-events: auto;
+            margin-top: 0; max-width: none; width: auto; flex: 1; box-shadow: none;
+        }
+        .dialog-reply .speech-bubble::before,
+        .dialog-reply .speech-bubble::after { display: none; }
+        .dialog-reply .speaker-name { font-weight: 700; font-size: 0.82rem; margin-bottom: 5px; }
+        .dialog-reply .speech-de { color: #065f46; font-weight: 600; font-size: 0.96rem; line-height: 1.45; margin-bottom: 3px; }
+        .dialog-reply .speech-ro { color: #6b7280; font-style: italic; font-size: 0.86rem; line-height: 1.4; }
+
+        /* nume vorbitor — culori */
+        .speaker-andreea { color: #047857; }
+        .speaker-frau-muller { color: #a21caf; }
+        .speaker-sprechstundenhilfe { color: #ea580c; }
+
+        /* avatare emoji */
+        .frau-muller-avatar { background: linear-gradient(135deg, #fdf4ff 0%, #f3e8ff 100%) !important; border-color: #a21caf !important; }
+        .sprechstundenhilfe-avatar { background: linear-gradient(135deg, #ffedd5 0%, #fed7aa 100%) !important; border-color: #ea580c !important; }
+
+        /* bule — fundal + chenar per personaj */
+        .speech-andreea { border-color: #6ee7b7; background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); }
+        .speech-frau-mueller { border-color: #e9d5ff; background: linear-gradient(135deg, #fdf4ff 0%, #f3e8ff 100%); }
+        .speech-sprechstundenhilfe { border-color: #fdba74; background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%); color: #7c2d12; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#top" class="navbar-logo">ʚଓ Claudia Toth</a>
+        <ul class="navbar-menu">
+            <li><a href="#teorie" onclick="openSection(0)">Teorie</a></li>
+            <li><a href="#dialog1" onclick="openSection(1)">🎬 Dialog 1</a></li>
+            <li><a href="#dialog2" onclick="openSection(2)">🎬 Dialog 2</a></li>
+            <li><a href="#ex1" onclick="openSection(3)">Ex. 1</a></li>
+            <li><a href="#ex2" onclick="openSection(4)">Ex. 2</a></li>
+            <li><a href="#ex3" onclick="openSection(5)">Ex. 3</a></li>
+            <li><a href="#ex4" onclick="openSection(6)">Ex. 4</a></li>
+            <li><a href="#ex5" onclick="openSection(7)">Ex. 5</a></li>
+            <li><a href="#ex6" onclick="openSection(8)">Ex. 6</a></li>
+            <li><a href="#ex7" onclick="openSection(9)">✍️ Ex. 7</a></li>
+            <li><a href="#flashcards" onclick="openSection(10)">📇 Flashcards</a></li>
+            <li><a href="#final-test" onclick="openSection(11)">🎯 Test Final</a></li>
+            <li><a href="vitalzeichen.pdf" download>📄 PDF</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="top">
+        <div class="header">
+            <h1>ʚଓ Vitalzeichen</h1>
+            <p class="subtitle">Semnele vitale — Blutdruck, Puls, Temperatur, Atmung + raportarea valorilor + Comparativ</p>
+            <p>Claudia Toth · Annettes Deutschkurs · A2.1 · Pflege Lecția 19 din 45</p>
+        </div>
+
+        <div class="cast-banner">
+            <h4>👋 Andreea măsoară tensiunea lui Frau Müller și raportează valorile la cabinet (Sprechstundenhilfe)</h4>
+            <div class="cast-grid">
+                <div class="cast-card"><img src="images/andreea.png" alt="Andreea"><div class="name">Andreea 🇷🇴</div><div class="detail">Pflegerin · măsoară</div></div>
+                <div class="cast-card frau-mueller-card">
+                    <div class="frau-mueller-avatar">
+                        <span class="hair">⚪</span>
+                        <span class="face">👵</span>
+                    </div>
+                    <div class="name">Frau Müller</div><div class="detail">Pacientă · Blutdruck</div>
+                </div>
+                <div class="cast-card"><img src="images/annette.png" alt="Annette"><div class="name">Annette</div><div class="detail">Profesoara · Berlin</div></div>
+                <div class="cast-card"><img src="images/mihai.png" alt="Mihai"><div class="name">Mihai</div><div class="detail">Bucătar · Potsdam</div></div>
+                <div class="cast-card"><img src="images/florian.png" alt="Florian"><div class="name">Florian</div><div class="detail">Doctor · Berlin</div></div>
+                <div class="cast-card"><img src="images/carolina.png" alt="Carolina"><div class="name">Carolina</div><div class="detail">Fotografă · Berlin</div></div>
+            </div>
+        </div>
+
+        <div class="box-etic">
+            <h4>⚠️ Notă importantă</h4>
+            <p>Această lecție te pregătește <strong>LINGVISTIC</strong> pentru măsurarea și raportarea semnelor vitale (Blutdruck, Puls, Temperatur, Atmung). <strong>NU înlocuiește</strong> formarea profesională în tehnica măsurării și NU îți dă dreptul să pui diagnostic sau să modifici medicația. Valorile-limită din lecție sunt orientative — urmează ÎNTOTDEAUNA indicațiile medicului și protocolul agenției. La o valoare extremă <strong>însoțită de simptome grave</strong> (Brustschmerzen, Atemnot, Bewusstlosigkeit) — <strong>suni 112</strong>. <em>Im Zweifel: noch einmal messen + anrufen.</em> În dubiu: măsori din nou + suni.</p>
+        </div>
+
+        <div style="background:#fef3c7; border-left:4px solid #f59e0b; padding:14px 20px; margin:20px 0; border-radius:8px;">
+            <p style="margin:0; color:#78350f; font-size:0.95rem;">⌨️ <strong>Tastatură fără caractere germane?</strong> Scrie <strong>ss</strong> pentru ß · <strong>ae</strong> pentru ä · <strong>oe</strong> pentru ö · <strong>ue</strong> pentru ü. La propoziții, punctul final e opțional. 🙂</p>
+        </div>
+
+        <div class="content">
+            <div class="section" id="teorie">
+                <div class="section-header" onclick="toggleMainSection(0)"><h3>ʚଓ TEORIE — Vitalzeichen (Blutdruck + Puls + Atmung + Temperatur + Comparativ + Alarm)</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-0"><div id="theory-container"></div></div>
+            </div>
+
+            <div class="section" id="dialog1">
+                <div class="section-header" onclick="toggleMainSection(1)"><h3>🎬 Dialog Animat 1 — „Blutdruck messen am Morgen" (măsurarea tensiunii)</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-1"><div id="dialog1-container"></div></div>
+            </div>
+
+            <div class="section" id="dialog2">
+                <div class="section-header" onclick="toggleMainSection(2)"><h3>🎬 Dialog Animat 2 — „Anruf in der Praxis" (raportarea valorilor cu Comparativ)</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-2"><div id="dialog2-container"></div></div>
+            </div>
+
+            <div class="section" id="ex1">
+                <div class="section-header" onclick="toggleMainSection(3)"><h3>ʚଓ Übung 1: Match — Vitalzeichen + Geräte</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-3">
+                    <div id="ex1-container"></div>
+                    <div class="btn-container">
+                        <button class="btn btn-check" onclick="checkExercise(1)">✓ Verifică</button>
+                        <button class="btn btn-reset" onclick="resetExercise(1)">↻ Resetează</button>
+                    </div>
+                    <div class="score" id="score-1"></div>
+                </div>
+            </div>
+
+            <div class="section" id="ex2">
+                <div class="section-header" onclick="toggleMainSection(4)"><h3>ʚଓ Übung 2: 🌟 Comparativ (höher als) + „zu" + adjektiv</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-4">
+                    <div id="ex2-container"></div>
+                    <div class="btn-container">
+                        <button class="btn btn-check" onclick="checkExercise(2)">✓ Verifică</button>
+                        <button class="btn btn-reset" onclick="resetExercise(2)">↻ Resetează</button>
+                    </div>
+                    <div class="score" id="score-2"></div>
+                </div>
+            </div>
+
+            <div class="section" id="ex3">
+                <div class="section-header" onclick="toggleMainSection(5)"><h3>ʚଓ Übung 3: Audio dictat — Vitalzeichen</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-5">
+                    <div id="ex3-container"></div>
+                    <div class="btn-container">
+                        <button class="btn btn-check" onclick="checkExercise(3)">✓ Verifică</button>
+                        <button class="btn btn-reset" onclick="resetExercise(3)">↻ Resetează</button>
+                    </div>
+                    <div class="score" id="score-3"></div>
+                </div>
+            </div>
+
+            <div class="section" id="ex4">
+                <div class="section-header" onclick="toggleMainSection(6)"><h3>ʚଓ Übung 4: Normalwerte + când dai alarma</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-6">
+                    <div id="ex4-container"></div>
+                    <div class="btn-container">
+                        <button class="btn btn-check" onclick="checkExercise(4)">✓ Verifică</button>
+                        <button class="btn btn-reset" onclick="resetExercise(4)">↻ Resetează</button>
+                    </div>
+                    <div class="score" id="score-4"></div>
+                </div>
+            </div>
+
+            <div class="section" id="ex5">
+                <div class="section-header" onclick="toggleMainSection(7)"><h3>ʚଓ Übung 5: Dialog Gap-Fill — Blutdruck messen</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-7">
+                    <div id="ex5-container"></div>
+                    <div class="btn-container">
+                        <button class="btn btn-check" onclick="checkExercise(5)">✓ Verifică</button>
+                        <button class="btn btn-reset" onclick="resetExercise(5)">↻ Resetează</button>
+                    </div>
+                    <div class="score" id="score-5"></div>
+                </div>
+            </div>
+
+            <div class="section" id="ex6">
+                <div class="section-header" onclick="toggleMainSection(8)"><h3>ʚଓ Übung 6: Traducere RO → DE (punctul final e opțional)</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-8">
+                    <div id="ex6-container"></div>
+                    <div class="btn-container">
+                        <button class="btn btn-check" onclick="checkExercise(6)">✓ Verifică</button>
+                        <button class="btn btn-reset" onclick="resetExercise(6)">↻ Resetează</button>
+                    </div>
+                    <div class="score" id="score-6"></div>
+                </div>
+            </div>
+
+            <div class="section" id="ex7">
+                <div class="section-header" onclick="toggleMainSection(9)"><h3>✍️ Übung 7: Schreiben — Raport vital pentru Petra</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-9">
+                    <div id="ex7-container"></div>
+                </div>
+            </div>
+
+            <div class="section" id="flashcards">
+                <div class="section-header" onclick="toggleMainSection(10)"><h3>ʚଓ Flashcards — 48 cards cu pronunție</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-10"><div id="flashcards-container"></div></div>
+            </div>
+
+            <div class="section" id="final-test">
+                <div class="section-header" onclick="toggleMainSection(11)"><h3>ʚଓ 🎯 Test Final — 25 întrebări</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-11"><div id="final-test-container"></div></div>
+            </div>
+        </div>
+
+        <div class="footer-cta">
+            <h3>🎉 Felicitări — semnele vitale sunt sub control!</h3>
+            <p>Acum cunoști <strong>cele 4 Vitalzeichen</strong> (Blutdruck, Puls, Temperatur, Atmung) + aparatele, <strong>Normalwerte</strong> (120 zu 80 · 60-100 puls · 36,5-37,5 °C · 12-20 respirații), cum <strong>măsori corect</strong> (ruhig sitzen, nicht sprechen, NU degetul mare la puls), cum <strong>raportezi valorile</strong> (130 zu 85, 37 Grad 8, 72 Schläge), gramatica <strong>Comparativ</strong> (höher/niedriger/schneller als + zu hoch), <strong>documentarea</strong> și — cel mai important — <strong>când dai alarma</strong> (valoare extremă + simptom = 112).</p>
+            <p class="cta-sub">📊 „Höher als gestern" — tu observi tendința, nu doar cifra. 💚</p>
+        </div>
+
+        <footer style="text-align:center; padding:24px 16px; color:#fff; font-size:0.9rem; opacity:0.9;">
+            © 2026 Claudia Toth · Annettes Deutschkurs · Pflege Lecția 19 din 45 — Vitalzeichen
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="theory.js"></script>
+    <script src="dialogs.js"></script>
+    <script src="exercises.js"></script>
+    <script src="flashcards.js"></script>
+    <script src="final-test.js"></script>
+</body>
+</html>
