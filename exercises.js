@@ -14,7 +14,7 @@ function normalizeAnswer(str) {
         .replace(/[ăâ]/g, 'a').replace(/î/g, 'i').replace(/[șş]/g, 's').replace(/[țţ]/g, 't')
         .replace(/…/g, '...').replace(/\s*\.\.\.\s*/g, ' ')
         .replace(/\s*\/\s*/g, ' ').replace(/\s*,\s*/g, ' ')
-        .replace(/\s+/g, ' ').replace(/[.!?;:]/g, '');   // <- punctul final și toată punctuația sunt eliminate
+        .replace(/\s+/g, ' ').replace(/[.!?;:]/g, '').trim();   // <- punctul final și toată punctuația sunt eliminate
 }
 
 function answerMatches(item, userInput) {
